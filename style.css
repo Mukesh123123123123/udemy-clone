@@ -71,6 +71,15 @@
     justify-content: space-around;
     border-bottom: solid black 2px;
     padding: 10px;
+    border: solid white 1px;
+    cursor: pointer;
+}
+
+.catagires p:hover{
+   transition: 1s;
+   background-color: transparent;
+   color: black;
+   border: solid black 1px;
 }
 
 .catagires p {
@@ -93,6 +102,21 @@
     position: absolute;
     top: 10%;
     left: 5%;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+   animation-fill-mode: forwards;
+}
+@keyframes zoom {
+    0%{
+        transition: scale(0);
+        opacity: 0;
+    }
+
+    100%{
+        transition: scale(1);
+        opacity: 1;
+    }
 }
 
 .recommended__container {
